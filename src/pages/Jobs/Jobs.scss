@@ -1,0 +1,22 @@
+@import "../../mixins";
+.jobs {
+    .heading {
+        @include d-flex(row, space-between, center);
+        width: 100%;
+    }
+}
+
+.add-jobs {
+    width: 500px;
+    max-width: 100%;
+    @include d-flex(column, flex-start, center);
+    gap: 1rem;
+    * {
+        color: var(--color-text);
+    }
+    .btns {
+        @include d-flex(row, space-between, center);
+        width: 100%;
+        gap: 1rem;
+    }
+}
